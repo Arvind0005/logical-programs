@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+                int s = 0;
+                char c[101];
+                scanf("%s",&c);
+                for (int i =0; i <strlen(c); i++)
+                {
+                    s = s + c[i]-96;
+                }
+                printf("%d",s);
+}
