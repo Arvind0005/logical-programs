@@ -1,0 +1,41 @@
+							//samsung-interview Q&A
+			//Write a program to print the elements in an array which are greater than all
+							//elements to its right.
+//EXAMPLE:
+//INPUT: 16,17,4,3,5,2
+//OUTPUT: 17,5,2
+		 
+				
+//CODE:
+#include <stdio.h>
+int main()
+{
+    int size,i,large,k,r;
+    scanf("%d",&size);
+    int arr[size];
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    i=0;
+    large=0;
+    k=0;
+    while(i<size)
+    {
+        if(arr[i]>large)
+        {
+            large=arr[i];
+            k=i;
+        }
+        if(i==(size-1))
+        {
+            printf("%d ",large);
+            i=k;
+            large=0;
+        }
+        i++;
+    }
+    return 0;
+    
+}
+
