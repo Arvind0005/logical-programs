@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[1000],b[1000];
+	int j,i,k;
+	gets(a);
+	strcpy(b,a);
+	int len=strlen(a);
+	j=len-1;
+	k=0;	
+	i=0;
+	while(i<len)
+	{
+		if(a[i]==b[j])
+		{
+			k++;
+			j--;
+		}
+		else
+		{
+			break;
+		}
+		i++;
+		
+	}
+	if(k==len)
+	{
+		printf("YES");
+	}
+	else
+	{
+		printf("NO");
+	}
+return 0;
+}

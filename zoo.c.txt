@@ -1,0 +1,21 @@
+#include <stdio.h>
+void abc(char *str);
+int main()
+{
+	char str[20];	
+	scanf("%s", str);
+	abc(str);
+}	
+void abc(char *str)
+{
+	int a=0,b=0;
+        while(*str!='\0')
+	{
+	    *str=='z'?a++:b++;
+	    str++;
+	}
+	if((2*a)==b)
+	printf("Yes");
+	else 
+	printf("No");
+}

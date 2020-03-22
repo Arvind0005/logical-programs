@@ -1,0 +1,13 @@
+n=int(input())
+i=1
+while i<=n:
+    sh,sm,eh,em=map(int,input().split())
+    xm=int(em+(60-sm))
+    xh=int(eh-sh)
+    if xm>=60:
+        xm=(xm-60)
+    else:
+        xh=xh-1
+    print(xh,xm)
+    i=i+1
+

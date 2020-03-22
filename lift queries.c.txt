@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,x,i=1,y=0,z=7;
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		scanf("%d",&x);
+		if(abs(x-y)<abs(z-x))
+		{
+			printf("A\n");
+			y=x;
+		}
+		else if(abs(x-y)>abs(z-x))
+		{
+			printf("B\n");
+			z=x;
+		}
+		else if(abs(x-y)==abs(z-x))
+		{
+			printf("A\n");
+			y=x;
+		}
+		i++;
+ 
+	}
+	return 0;
+}

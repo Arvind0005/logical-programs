@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int sh,sm,eh,em,n,i=1,xm,xh=0; 
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		scanf("%d %d %d %d ",&sh,&sm,&eh,&em); 
+		xm=em+(60-sm); //resulting min = ending min+remaining minutes in starting hr 
+		xh=eh-sh;	  //resulting hr = ending hr - starting hr.
+		if(xm>=60)
+		{				//if xm>60 then xm= xm-60
+			xm=xm-60; 
+		}
+		else			//if xm<60 then xh=xh-1
+		{
+			xh=(xh-1);
+		}
+		printf("%d %d\n",xh,xm);
+		i++;
+	}
+}

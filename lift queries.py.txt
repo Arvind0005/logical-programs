@@ -1,0 +1,16 @@
+n=int(input())
+i=1;
+y=0;
+z=7;
+while i<=n:
+    x=int(input())
+    if abs(x-y)<abs(z-x):
+        print("A")
+        y=x
+    elif abs(z-x)<abs(x-y):
+        print("B")
+        z=x
+    else:
+        print("A")
+        y=x
+    i=i+1
